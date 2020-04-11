@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark rounded rounded-left rounded-right rounded-top rounded-bottom shadow ;">
+    <div class="container"> <a class="navbar-brand" href="#">
+        <div class="col-md-12"><img src="assets\image\ramanaas.jfif" alt="Smiley face" height="50" width="50" class="mx-auto"></div>
+      </a>
+      <h4 class="bg-dark text-warning">RAMANAAS HOTEL</h4><button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar10" aria-expanded="true">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse show" id="navbar10" >
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" [routerLink]="['Billing']"><b><i class="text-center text-uppercase h-75 w-75 text-white">Billing&nbsp;</i></b></a> </li>
+          <li class="nav-item"> <a class="nav-link" [routerLink]="['Stock management']"><i class="text-center text-uppercase bg-dark text-white">Stock management</i></a> </li>
+          <li class="nav-item bg-dark text-info"> <a class="nav-link text-center text-uppercase text-white" [routerLink]>employee</a> </li>
+        </ul><button type="button" class="btn btn-primary"  data-backdrop="static" data-toggle="modal" data-target="#exampleModalCenter">
+          Start Session
+        </button>
+        <a class="btn navbar-btn ml-md-2 btn-light text-dark">Contact us</a>
+      </div>
+    </div>
+    <ng-template #mymodal let-modal>
+    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-warning">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Session Detail</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body  bg-dark text-white ">
+            <form>
+              <label for="username">Name:</label><br>
+              <input type="text" id="username" name="username"><br>
+              <label for="emid">Employee Id:</label><br>
+              <input type="text" id="emid" name="emid"><br>
+              <label for="pwd">Password:</label><br>
+              <input type="password" id="pwd" name="pwd">
+            </form>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  </nav>
+  <div style="background-color: darkgray text-white;">
+
+    <router-outlet>  </router-outlet>
+ 
+</div>

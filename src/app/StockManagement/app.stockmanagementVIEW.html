@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Stack Management</title>
+
+  <!-- Bootstrap core CSS -->
+  
+
+</head>
+
+<body class="bg-dark text-white">
+
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="p-4 pt-5">
+        <div class="col-md-12"><img src="assets\image\ramanaas.jfif" alt="Smiley face" height="200" width="200" class="mx-auto"></div>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a [routerLink]="['stock']">Stock</a>
+          </li>
+          
+          <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Daily Inventry</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                  <a [routerLink]="['Daily stock']">Daily stock</a>
+              </li>
+              <li>
+                  <a [routerLink]="['expenditure']">Expenditure</a>
+              </li>
+              <li>
+                  <a [routerLink]="['wages']">Wages</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a [routerLink]="['due']">Due</a>
+          </li>
+         
+        </ul>
+
+        <div class="footer">
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        </div>
+
+      </div>
+    </nav>
+
+      <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 ">
+
+      
+      <h1>Stock management</h1>
+      <router-outlet></router-outlet>
+      
+  </div>
+  </div>
+
+</body>
+
+</html>
+
+
+

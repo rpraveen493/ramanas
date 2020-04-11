@@ -1,0 +1,38 @@
+html,
+
+
+body {
+	margin: 0;
+   position: absolute;
+    background-color: black;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.container {
+  
+	top: 200%;
+	
+	transform: translate(-50%, -50%);
+}
+
+table {
+    margin-left: 350px;
+    margin-top: 180px;
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(48, 1, 1, 0.2);
+	color: #6c757d;
+}
+
+th {
+	text-align: left;
+}
+
